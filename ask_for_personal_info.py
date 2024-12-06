@@ -24,9 +24,18 @@ with open("./output.txt", "a") as personal_infos:
             
             except: 
                 print("Please input valid numbers")
+#write the personal infos in txt first dahil isa lang nase-save pag maraming entry ;(
+        personal_infos.write(f"Name: {name}\n")
+        personal_infos.write(f"Gender: {gender}\n")
+        personal_infos.write(f"Address: {address}\n")
+        personal_infos.write(f"Favorite Color: {fav_color}\n")
+        personal_infos.write(f"Favorite Song: {fav_song}\n")
+        personal_infos.write(f"Age: {age}\n")
+        personal_infos.write(f"Contact Number: {number}\n")
+        personal_infos.write("\n")
+
 #ask if they want to put another entry/person
         another_input = input("Do you want to put another entry?(yes or no): ")
         if another_input != "yes":
             print("Your Personal Information Has Been Successfully Saved")
             break
-#write the personal infos in txt 
