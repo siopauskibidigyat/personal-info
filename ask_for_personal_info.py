@@ -25,4 +25,8 @@ with open("./output.txt", "a") as personal_infos:
             except: 
                 print("Please input valid numbers")
 #ask if they want to put another entry/person
+        another_input = input("Do you want to put another entry?(yes or no): ")
+        if another_input != "yes":
+            print("Your Personal Information Has Been Successfully Saved")
+            break
 #write the personal infos in txt 
