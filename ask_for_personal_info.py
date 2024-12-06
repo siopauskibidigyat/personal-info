@@ -11,7 +11,15 @@ with open("./output.txt", "a") as personal_infos:
         while True:
             try:
                 age = int(input("Age: "))
-                number = int(input("Contact Number: 09"))
+
+                while True:
+
+                    number = input("Contact Number: 09")
+                    if len(number) == 9 and number.isdigit:
+                        number = f"09{number}"
+                        break
+                    else:
+                        print("Number should only contain 11 digits")
                 break
             
             except: 
