@@ -7,8 +7,14 @@ with open("./output.txt", "a") as personal_infos:
         address = input("Address: ")
         fav_color = input("Favorite Color: ")
         fav_song = input("Favorite Song: ")
-        age = int(input("Age: "))
-        number = int(input("Contact Number: "))
-#check for errors for input age and number
+#check for errors for input age and number        
+        while True:
+            try:
+                age = int(input("Age: "))
+                number = int(input("Contact Number: 09"))
+                break
+            
+            except: 
+                print("Please input valid numbers")
 #ask if they want to put another entry/person
 #write the personal infos in txt 
